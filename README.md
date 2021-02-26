@@ -1,4 +1,3 @@
-# yii2-cookie-consent
 Yii2 Cookie Consent
 ============================
 Yii2 Bootstrap Pincode Input

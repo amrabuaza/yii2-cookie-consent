@@ -1,0 +1,110 @@
+/*********************************************************************************************************************
+// * File: cookie-consent.css
+// * Developed By Amr Abu Aza
+// * Email: c.r925@hotmail.com
+// * Date: 2021-02-17
+// * Desc: This File for build cookie consent style
+// *********************************************************************************************************************/
+
+#cookie-consent {
+    display: none;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1em 1.8em;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+    background-color: #003f67;
+    color: #fff;
+    height: 85px;
+    z-index: 2147483050;
+}
+
+@media (max-width: 768px) {
+    #cookie-consent {
+        height: 134px;
+    }
+}
+
+#cookie-consent .cookie-consent-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    #cookie-consent .cookie-consent-body {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    #cookie-consent .cookie-consent-body .cookie-message {
+        width: 343px;
+        height: 46px;
+    }
+}
+
+@media (max-width: 360px) {
+    #cookie-consent .cookie-consent-body .cookie-message {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+}
+
+#cookie-consent .cookie-consent-body .cookie-learn-more-btn {
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    #cookie-consent .cookie-consent-body .cookie-learn-more-btn {
+        order: 2;
+        padding: 0;
+    }
+}
+
+#cookie-consent .cookie-consent-body .cookie-allow-btn {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #e30b1c;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    #cookie-consent .cookie-consent-body .cookie-allow-btn {
+        width: 97px;
+        height: 32px;
+        padding: 4px 12px;
+    }
+}
+
+#cookie-consent .cookie-consent-body .cookie-allow-btn:hover {
+    text-decoration: none;
+}
